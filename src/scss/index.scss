@@ -1,10 +1,10 @@
 @import "~normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
-@import "header";
-@import "toolbar";
-@import "formula";
-@import "table";
+// @import "header";
+// @import "toolbar";
+// @import "formula";
+// @import "table";
 @import "dashboard";
 
 
@@ -23,5 +23,5 @@ body {
     color: green;
     height: 100%;
     max-width: 100%;
-    font-size: .8rem;
+    font-size: 8rem;
 }
