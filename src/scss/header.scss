@@ -1,21 +1,21 @@
 @import "variables";
 @import "mixins";
 
-.exel__header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: $header-height;
-    padding: 8px 4px 4px 0;
-    display: flex;
-    justify-content: space-between;
+.excel__header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: $header-height;
+  padding: 8px 4px 0;
+  display: flex;
+  justify-content: space-between;
 
-   & .input {
+  & .input {
     margin: 0;
     padding: 2px 7px;
     min-width: 1px;
-    color: black;
+    color: #000;
     border: 1px solid transparent;
     border-radius: 2px;
     height: 20px;
@@ -23,18 +23,17 @@
     line-height: 22px;
     outline: none;
 
-    &:focus {
-        border: 2px solid #1a73e8;
-    }
     &:hover {
-        border: 1px solid $border-color;
+      border: 1px solid $border-color;
     }
 
-   } 
+    &:focus {
+      border: 2px solid #1a73e8;
+    }
+  }
 
-   .button {
+  .button {
     @include button(red);
-   }
+  }
 
-   
 }
