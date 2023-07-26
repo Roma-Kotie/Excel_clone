@@ -5,7 +5,7 @@ export class Header extends ExcelComponent {
 
   toHTML() {
     return `
-      <input type="text" class="input" value="New table" />
+      <input type="text" class="input" value="Новая таблица" />
 
       <div>
 
