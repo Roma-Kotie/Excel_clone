@@ -6,6 +6,7 @@ export class ExcelComponent extends DomListener {
     this.name = options.name || ''
   }
 
+  // Return component template
   toHTML() {
     return ''
   }
