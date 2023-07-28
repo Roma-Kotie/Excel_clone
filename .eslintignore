@@ -3,3 +3,5 @@ Table.js
 Toolbar.js
 Header.js
 TableSelection.js
+Excel.js
+StoreSubscriber.js

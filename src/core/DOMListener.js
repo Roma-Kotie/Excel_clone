@@ -19,6 +19,7 @@ export class DomListener {
         )
       }
       this[method] = this[method].bind(this)
+      //Analog addEventListener
       this.$root.on(listener, this[method])
     })
   }
