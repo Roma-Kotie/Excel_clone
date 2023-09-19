@@ -1,8 +1,13 @@
 @import "variables";
 @import "mixins";
-
+body {
+  background-image: url('../scss/images/excel_background.png');
+  background-size: cover; /* Опционально: изменяет размер изображения, чтобы оно полностью покрывало фон */
+  background-repeat: no-repeat; /* Опционально: предотвращает повторение изображения по горизонтали и вертикали */
+  background-attachment: fixed;
+}
 .db {
-
+  
   &__header {
     position: fixed;
     left: 0;
@@ -12,53 +17,66 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
+    background: $max-dark-color;
+    color: $max-light-color;
     box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
     z-index: 1000;
+    // opacity: 0;
   }
 
   &__new {
     margin-top: $db-header-height;
     padding: 1.5rem;
-    background: #dadce0;
+    background: $min-light-color;
+    //opacity: 40%;
   }
 
   &__create {
     width: 160px;
-    height: 160px;
-    background: #fff;
+    height: 80px;
+    background: $max-dark-color;
     border-radius: 4px;
-    border: 1px solid #dadce0;
+    border: 2px solid $max-light-color;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     text-decoration: none;
-    color: #000;
+    color: $max-light-color;
     text-align: center;
+    transition: 700ms;
+    opacity: 100%;
 
     &:hover {
       cursor: pointer;
-      color: green;
-      border-color: green;
+      color: $max-dark-color;
+      border-color: $max-dark-color;
+      background: $max-light-color;
+      transition: 200ms;
+
     }
   }
 
   &__view {
     max-width: 1000px;
     margin: 0 auto;
+    
   }
 
   &__table {
     padding: 1rem;
+    background:$min-dark-color;
+    font-weight: 900;
+    color:  $max-light-color;
+    opacity: 90%;
   }
 
   &__list-header {
     display: flex;
     justify-content: space-between;
-    color: #202124;
-    font-weight: 500;
-    font-size: 16px;
+    color: $max-light-color;
+    font-weight: 1000;
+    font-size: 20px;
     margin-bottom: 10px;
     padding: 0 12px;
   }
@@ -72,21 +90,27 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 14px 12px 16px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border-radius: 25px;
 
     &:hover {
-      background: #e6f4ea;
+      background: $max-light-color;
       border-radius: 25px;
+      color: $max-dark-color;
+      border: 2px $max-dark-color;
+      transition: 400ms; 
+      opacity: 100%;
     }
 
     a {
       text-decoration: none;
       cursor: pointer;
-      color: #202124;
+      color: $max-light-color;
       font-size: 14px;
 
       &:hover {
         text-decoration: underline;
+        color: $max-dark-color;
       }
     }
   }

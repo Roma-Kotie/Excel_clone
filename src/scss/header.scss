@@ -10,6 +10,7 @@
   padding: 8px 4px 0;
   display: flex;
   justify-content: space-between;
+  background: $max-dark-color;
 
   & .input {
     margin: 0;
@@ -28,7 +29,7 @@
     }
 
     &:focus {
-      border: 2px solid #1a73e8;
+      border: 3px solid $min-light-color;
     }
   }
 

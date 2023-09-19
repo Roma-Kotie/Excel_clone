@@ -11,8 +11,11 @@
   border-bottom: 1px solid $border-color;
   padding: 7px 10px;
   display: flex;
+  background: $min-dark-color;
+  opacity: 90%;
+  color: $max-light-color;
 
   .button {
-    @include button(green);
+    @include button($min-light-color);
   }
 }

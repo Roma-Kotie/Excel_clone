@@ -15,12 +15,12 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .excel {
   position: relative;
-  color: #888;
+  color: $min-dark-color;
   height: 100%;
   max-width: 100%;
   font-size: .8rem;
